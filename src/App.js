@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <img src="/logo192.png" alt="Lions Clube Camboriú" className="logo" />
+        <img src="/Logo_Lions_Camboriú.png" alt="Lions Clube Camboriú" className="logo" />
         <h1>Bazar Solidário</h1>
         <h2>Lions Clube Camboriú</h2>
       </header>
