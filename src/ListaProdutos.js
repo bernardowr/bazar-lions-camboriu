@@ -19,13 +19,22 @@ const cardStyle = {
     minHeight: 220,
 };
 
+const imgStyle = {
+    width: 'auto',
+    height: 120,
+    objectFit: 'cover',
+    marginBottom: 12,
+    borderRadius: 8,
+    display: 'block',
+};
+
 const ListaProdutos = () => (
     <div style={{ maxWidth: 1200, margin: '0 auto', padding: 24 }}>
         <h2 style={{ textAlign: 'center' }}>Lista de Produtos</h2>
         <div style={gridStyle}>
             {produtos.map((produto, idx) => (
                 <div key={idx} style={cardStyle}>
-                    <img src={produto.imagem} alt={produto.descricao} style={{ width: 80, height: 80, objectFit: 'cover', marginBottom: 12, borderRadius: 8 }} />
+                    <img src={produto.imagem} alt={produto.descricao} style={imgStyle} />
                     <div style={{ fontWeight: 'bold', textAlign: 'center', marginBottom: 8 }}>{produto.descricao}</div>
                     <div>Quantidade: {produto.quantidade}</div>
                     <div>Valor: R$ {produto.valor.toFixed(2)}</div>
