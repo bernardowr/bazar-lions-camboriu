@@ -92,9 +92,9 @@ const produtos = [
     },
     {
         quantidade: 2,
-        descricao: 'VESTUARIO CONJUNTO ESPORTIVO',
+        descricao: 'CONJUNTO ESPORTIVO',
         valor: 120.00,
-        imagem: '/produtos/vestuario-conjunto-esportivo.png',
+        imagem: '/produtos/conjunto-esportivo.png',
     },
     {
         quantidade: 1,
