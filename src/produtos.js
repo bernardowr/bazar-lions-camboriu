@@ -19,7 +19,7 @@ const produtos = [
         imagem: '/produtos/fire-stick.png',
     },
     {
-        quantidade: 2,
+        quantidade: 1,
         descricao: 'SMARTWATCH (RELOG.INTLG.) SMART WEAR',
         valor: 120.00,
         imagem: '/produtos/smartwatch.png',
@@ -109,13 +109,13 @@ const produtos = [
         imagem: '/produtos/impressora.png',
     },
     {
-        quantidade: 2,
+        quantidade: 20,
         descricao: 'JAQUETA',
         valor: 676.85,
         imagem: '/produtos/jaqueta.png',
     },
     {
-        quantidade: 20,
+        quantidade: 2,
         descricao: 'CONTADOR DE DINHEIRO QUANTA',
         valor: 50.41,
         imagem: '/produtos/contador.png',
@@ -127,7 +127,7 @@ const produtos = [
         imagem: '/produtos/switch-sg1024.png',
     },
     {
-        quantidade: 2,
+        quantidade: 1,
         descricao: 'SWITCH TP-LINK TL-SG108',
         valor: 158.64,
         imagem: '/produtos/switch-sg108.png',
@@ -157,7 +157,7 @@ const produtos = [
         imagem: '/produtos/switch-sg1016d.png',
     },
     {
-        quantidade: 20,
+        quantidade: 26,
         descricao: 'PLACA MAE GOLINE GL-HSS-MA',
         valor: 261.23,
         imagem: '/produtos/placa-mae.png',
