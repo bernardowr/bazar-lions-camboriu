@@ -77,8 +77,14 @@ body {
   text-align: center;
 }
 
+.banner p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .banner h3 {
-  margin: 0 0 8px 0;
+  margin-left: 1em;
+  margin-right: 1em;
   font-size: 1.5rem;
 }
 
