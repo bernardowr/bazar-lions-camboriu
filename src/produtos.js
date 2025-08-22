@@ -171,7 +171,7 @@ const produtos = [
     {
         quantidade: 375,
         descricao: 'SSD BEST MEMORY 240GB',
-        valor: 30.00,
+        valor: 60.00,
         imagem: '/produtos/hdssd.png',
     },
     {
