@@ -1,43 +1,23 @@
 import React from 'react';
 import produtos from './produtos';
-
-const gridStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-    gap: 20,
-    padding: 0,
-};
-
-const cardStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    border: '1px solid #eee',
-    borderRadius: 8,
-    padding: 16,
-    background: '#fff',
-    minHeight: 220,
-};
-
-const imgStyle = {
-    width: 'auto',
-    height: 120,
-    objectFit: 'cover',
-    marginBottom: 12,
-    borderRadius: 8,
-    display: 'block',
-};
+import './ListaProdutos.css';
 
 const ListaProdutos = () => (
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: 24 }}>
-        <h2 style={{ textAlign: 'center' }}>Lista de Produtos</h2>
-        <div style={gridStyle}>
+    <div className="lista-produtos-container">
+        <h2 className="lista-produtos-titulo">Lista de Produtos</h2>
+        <div className="lista-produtos-grid">
             {produtos.map((produto, idx) => (
-                <div key={idx} style={cardStyle}>
-                    <img src={produto.imagem} alt={produto.descricao} style={imgStyle} />
-                    <div style={{ fontWeight: 'bold', textAlign: 'center', marginBottom: 8 }}>{produto.descricao}</div>
-                    <div>Quantidade: {produto.quantidade}</div>
-                    <div>Valor: R$ {produto.valor.toFixed(2)}</div>
+                <div key={idx} className="produto-card">
+                    <div className="produto-imagem-container">
+                        <img
+                            src={produto.imagem}
+                            alt={produto.descricao}
+                            className="produto-imagem"
+                        />
+                    </div>
+                    <div className="produto-descricao">{produto.descricao}</div>
+                    <div className="produto-info">Quantidade: {produto.quantidade}</div>
+                    <div className="produto-info">Valor: R$ {produto.valor.toFixed(2)}</div>
                 </div>
             ))}
         </div>
